@@ -35,7 +35,7 @@ jobs:
 
       - name: Run MSBuild
         run: |
-          msbuild .\Hl7Service.sln /p:configuration="Release" /p:PublishUrl="../_build"
+          msbuild .\Hl7Service.sln /p:configuration="Release" /p:PublishUrl="_build"
         working-directory: ${{ env.AZURE_WEBAPP_PACKAGE_PATH }}
         
       - name: Login via Az module
